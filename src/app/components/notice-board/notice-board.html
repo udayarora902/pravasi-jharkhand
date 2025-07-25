@@ -1,0 +1,43 @@
+<div
+  class="bg-transparent rounded-lg shadow-lg overflow-hidden flex flex-col border-2 border-green-500"
+  [ngClass]="maxHeight"
+>
+  <div
+    class="bg-gradient-to-r from-green-700 to-green-800 text-white text-center py-3 shadow-sm"
+  >
+    <h2 class="font-bold text-lg flex items-center justify-center gap-2">
+      <span>{{ titleIcon }}</span>
+      {{ title }}
+    </h2>
+  </div>
+  <div class="flex-1 p-4 overflow-y-auto">
+    <div
+      *ngFor="let notice of notices"
+      class="bg-green-50 rounded-lg p-3 mb-3 shadow-sm border border-green-100 last:mb-0"
+      [ngClass]="notice.link ? 'cursor-pointer hover:bg-green-100 hover:shadow-md transition-all duration-200' : ''"
+      (click)="onNoticeClick(notice)"
+    >
+      <div class="flex items-start gap-3">
+        <div
+          class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center text-xs font-semibold flex-shrink-0 shadow-sm"
+        >
+          <div class="text-center leading-tight">
+            {{ notice.date.day }}<br />{{ notice.date.month }}
+          </div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <h3 class="font-semibold text-sm mb-1 text-gray-800">
+            {{ notice.title }}
+          </h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-1">
+            {{ notice.description }}
+          </p>
+          <div class="text-xs text-green-600 font-medium">
+            <span>📍 {{ notice.location }}</span>
+            <span class="ml-2">🕐 {{ notice.time }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

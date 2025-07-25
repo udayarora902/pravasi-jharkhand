@@ -1,0 +1,27 @@
+<!-- Slideshow and Notice Board Section -->
+<div class="flex gap-4 p-4 max-w-7xl mx-auto">
+  <!-- Slideshow: occupies 2/3 of the width -->
+  <div class="w-2/3">
+    <app-image-slideshow [images]="heroContent.images"></app-image-slideshow>
+  </div>
+  
+  <!-- Notice Board: occupies 1/3 of the width -->
+  <div class="w-1/3">
+    <app-notice-board 
+      [notices]="heroContent.notices" 
+      [title]="heroContent.noticeBoardTitle" 
+      [titleIcon]="heroContent.noticeBoardIcon">
+    </app-notice-board>
+  </div>
+</div>
+
+<!-- Hero/Main Content Section -->
+<app-hero-section></app-hero-section>
+
+<!-- Main Content Component -->
+<app-main-content></app-main-content>
+
+<br />
+
+<!-- Footer Component -->
+<app-footer></app-footer>

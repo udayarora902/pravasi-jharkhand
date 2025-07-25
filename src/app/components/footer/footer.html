@@ -1,0 +1,96 @@
+<!-- Footer Container -->
+<div class="w-full">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Footer -->
+    <footer class="bg-orange-500 text-white shadow-sm">
+      <div
+        class="footer grid grid-cols-1 md:grid-cols-3 gap-8 p-6 sm:p-10 text-sm sm:text-base"
+      >
+        <!-- Quick Links -->
+        <nav>
+          <h6
+            class="footer-title text-white opacity-90 mb-4 text-lg font-bold uppercase"
+          >
+            Quick Links
+          </h6>
+          <div class="flex flex-col space-y-2">
+            <a
+              href="#"
+              class="link link-hover text-white opacity-80 hover:opacity-100 transition-opacity"
+            >
+              Live Telecast
+            </a>
+            <a
+              href="#"
+              class="link link-hover text-white opacity-80 hover:opacity-100 transition-opacity"
+            >
+              Contact Us
+            </a>
+          </div>
+        </nav>
+
+        <!-- Contact Us -->
+        <nav>
+          <h6
+            class="footer-title text-white opacity-90 mb-4 text-lg font-bold uppercase"
+          >
+            Contact Us
+          </h6>
+          <div class="flex flex-col space-y-2 text-white opacity-80">
+            <p class="font-semibold">Pravashi Jharkhand</p>
+            <p>C1/15 Pandara Park Near India Gate</p>
+            <p>New Delhi 110003</p>
+            <a
+              href="mailto:pravasijharkhand@gmail.com"
+              class="link link-hover hover:opacity-100 transition-opacity"
+            >
+              pravasijharkhand&#64;gmail.com
+            </a>
+            <p>Phone 011-23782258</p>
+            <a
+              href="http://www.pravasijharkhand.com"
+              class="link link-hover hover:opacity-100 transition-opacity"
+            >
+              www.pravasijharkhand.com
+            </a>
+          </div>
+        </nav>
+
+        <!-- Testimonials -->
+        <nav>
+          <h6
+            class="footer-title text-white opacity-90 mb-4 text-lg font-bold uppercase"
+          >
+            Testimonials
+          </h6>
+
+          <div
+            class="space-y-2 transition-opacity duration-500 ease-in-out"
+            [style.opacity]="fadeOpacity"
+          >
+            <p class="italic text-sm sm:text-base text-white leading-relaxed">
+              "{{ testimonials[currentTestimonialIndex].quote }}"
+            </p>
+            <p class="text-right font-semibold text-white mt-2">
+              — {{ testimonials[currentTestimonialIndex].author }}
+            </p>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<!-- Copyright -->
+<div class="w-full">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-green-600 text-white">
+      <div class="flex justify-center py-4 text-xs">
+        <p class="opacity-80">
+          Copyright © 2025 Pravasi Jharkhand All Rights Reserved Developed By:
+          Malviya Technologies
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

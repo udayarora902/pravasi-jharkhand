@@ -1,0 +1,36 @@
+/* Left align dropdown with button (default behavior) */
+.dropdown {
+  position: relative;
+}
+
+/* Prevent text wrapping in navbar buttons */
+.navbar .btn {
+  white-space: nowrap;
+}
+
+/* Navbar button hover effects - darker green background with orange text */
+.navbar .btn:hover {
+  background-color: #15803d !important; /* green-700 - darker green */
+  color: #f97316 !important; /* orange-500 */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ensure dropdown menus appear above other content */
+.dropdown-content {
+  z-index: 50;
+}
+
+/* Style dropdown items - green text on white background */
+.dropdown-content a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #16a34a !important; /* green-600 */
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0fdf4; /* green-50 for subtle hover effect */
+  color: #15803d !important; /* darker green on hover */
+}

@@ -1,0 +1,31 @@
+/* Founder Image Styles */
+.founder-image-container {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  background: linear-gradient(135deg, #f97316, #065f46); /* Orange to dark green gradient */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.founder-image {
+  width: 100%;
+  height: 180px; /* Increased from original h-32 (128px) */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  background: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .founder-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-image {
+    height: 140px;
+  }
+}

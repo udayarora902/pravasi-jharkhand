@@ -1,0 +1,62 @@
+<!-- Navbar -->
+<div class="w-full">
+  <!-- Inner max-width container -->
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Actual navbar -->
+    <div
+      class="bg-orange-500 navbar shadow-sm flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base rounded-4xl"
+    >
+      <a routerLink="/" class="btn btn-ghost" href="#"
+        ><i class="fas fa-home text-xl text-white"></i
+      ></a>
+      <div class="dropdown dropdown-hover">
+        <div tabindex="0" role="button" class="btn btn-ghost">About Us</div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li><a routerLink="/tokagsp">Tokagsp</a></li>
+          <li><a routerLink="/itandmedia">IT and Media</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover">
+        <div tabindex="0" role="button" class="btn btn-ghost">Programes</div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li>
+            <a routerLink="pravasisammelansecond"
+              >2nd Pravasi Jharkhand Sammelan</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover">
+        <div tabindex="0" role="button" class="btn btn-ghost">
+          Management Team
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li><a routerLink="nationalteam">National Team</a></li>
+          <li><a routerLink="delhicontactperson">Delhi Contact Person</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover">
+        <div tabindex="0" role="button" class="btn btn-ghost">Gallery</div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li><a routerLink="photogallery">Photo Gallery</a></li>
+          <li><a routerLink="videogallery">Video Gallery</a></li>
+          <li><a routerLink="pressrelease">Press Release</a></li>
+        </ul>
+      </div>
+      <a routerLink="feedback" class="btn btn-ghost">Feedback</a>
+      <a routerLink="contactus" class="btn btn-ghost">Contact Us</a>
+    </div>
+  </div>
+</div>
