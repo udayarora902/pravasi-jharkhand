@@ -1,12 +1,12 @@
 <!-- Slideshow and Notice Board Section -->
-<div class="flex gap-4 p-4 max-w-7xl mx-auto">
-  <!-- Slideshow: occupies 2/3 of the width -->
-  <div class="w-2/3">
+<div class="flex flex-col lg:flex-row gap-4 p-4 max-w-7xl mx-auto">
+  <!-- Slideshow: full width on mobile, 2/3 on desktop -->
+  <div class="w-full lg:w-2/3">
     <app-image-slideshow [images]="heroContent.images"></app-image-slideshow>
   </div>
   
-  <!-- Notice Board: occupies 1/3 of the width -->
-  <div class="w-1/3">
+  <!-- Notice Board: full width on mobile, 1/3 on desktop -->
+  <div class="w-full lg:w-1/3">
     <app-notice-board 
       [notices]="heroContent.notices" 
       [title]="heroContent.noticeBoardTitle" 
@@ -19,9 +19,9 @@
 <app-hero-section></app-hero-section>
 
 <!-- Page specific content -->
-<div class="max-w-7xl mx-auto px-4 py-6">
-  <h2 class="text-2xl font-bold mb-4">National Team</h2>
-  <p class="text-gray-700">Meet our dedicated national team members working for the community.</p>
+<div class="max-w-7xl mx-auto px-4 py-4 sm:py-6">
+  <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 text-white">National Team</h2>
+  <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Meet our dedicated national team members working for the community.</p>
 </div>
 
 <!-- Join Our Community Section -->

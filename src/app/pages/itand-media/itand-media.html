@@ -1,12 +1,12 @@
 <!-- Slideshow and Notice Board Section -->
-<div class="flex gap-4 p-4 max-w-7xl mx-auto">
-  <!-- Slideshow: occupies 2/3 of the width -->
-  <div class="w-2/3">
+<div class="flex flex-col lg:flex-row gap-4 p-4 max-w-7xl mx-auto">
+  <!-- Slideshow: full width on mobile, 2/3 on desktop -->
+  <div class="w-full lg:w-2/3">
     <app-image-slideshow [images]="heroContent.images"></app-image-slideshow>
   </div>
   
-  <!-- Notice Board: occupies 1/3 of the width -->
-  <div class="w-1/3">
+  <!-- Notice Board: full width on mobile, 1/3 on desktop -->
+  <div class="w-full lg:w-1/3">
     <app-notice-board 
       [notices]="heroContent.notices" 
       [title]="heroContent.noticeBoardTitle" 
@@ -21,13 +21,13 @@
 <!-- Page specific content -->
 <!-- Grid Layout: Welcome, Founder in 2 rows + Join Us with rowspan 2 -->
 <div class="max-w-7xl mx-auto px-4">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
     <!-- Welcome Section (Row 1, Col 1-2) -->
-    <div class="lg:col-span-2 p-6 rounded-lg text-white">
-      <h2 class="text-xl font-bold mb-4">WELCOME TO Pravasi Jharkhand</h2>
-      <p class="text-sm leading-relaxed">Media Team</p>
+    <div class="lg:col-span-2 p-4 sm:p-6 rounded-lg text-white">
+      <h2 class="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">WELCOME TO Pravasi Jharkhand</h2>
+      <p class="text-sm sm:text-base leading-relaxed">Media Team</p>
       <!-- Thin orange divider at bottom of welcome section -->
-      <hr class="border-0 h-px bg-orange-500 mt-4" />
+      <hr class="border-0 h-px bg-orange-500 mt-3 sm:mt-4" />
     </div>
 
     <!-- Enhanced Join Us Section with Facebook Integration - Pure Tailwind CSS -->
