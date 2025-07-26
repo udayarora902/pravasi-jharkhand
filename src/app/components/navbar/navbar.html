@@ -3,60 +3,99 @@
   <!-- Inner max-width container -->
   <div class="max-w-7xl mx-auto px-4">
     <!-- Actual navbar -->
-    <div
-      class="bg-orange-500 navbar shadow-sm flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base rounded-4xl"
-    >
-      <a routerLink="/" class="btn btn-ghost" href="#"
-        ><i class="fas fa-home text-xl text-white"></i
-      ></a>
-      <div class="dropdown dropdown-hover">
-        <div tabindex="0" role="button" class="btn btn-ghost">About Us</div>
-        <ul
-          tabindex="0"
-          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
-        >
-          <li><a routerLink="/tokagsp">Tokagsp</a></li>
-          <li><a routerLink="/itandmedia">IT and Media</a></li>
-        </ul>
-      </div>
-      <div class="dropdown dropdown-hover">
-        <div tabindex="0" role="button" class="btn btn-ghost">Programes</div>
-        <ul
-          tabindex="0"
-          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
-        >
-          <li>
-            <a routerLink="pravasisammelansecond"
-              >2nd Pravasi Jharkhand Sammelan</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="dropdown dropdown-hover">
-        <div tabindex="0" role="button" class="btn btn-ghost">
-          Management Team
+    <div class="bg-orange-500 navbar shadow-sm rounded-4xl">
+      <!-- Mobile menu button (visible on small screens) -->
+      <div class="navbar-start lg:hidden">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-64">
+            <li><a routerLink="/" class="text-gray-700"><i class="fas fa-home mr-2"></i>Home</a></li>
+            <li>
+              <details>
+                <summary class="text-gray-700">About Us</summary>
+                <ul class="p-2">
+                  <li><a routerLink="/tokagsp" class="text-gray-600">Tokagsp</a></li>
+                  <li><a routerLink="/itandmedia" class="text-gray-600">IT and Media</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="text-gray-700">Programes</summary>
+                <ul class="p-2">
+                  <li><a routerLink="pravasisammelansecond" class="text-gray-600">2nd Pravasi Jharkhand Sammelan</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="text-gray-700">Management Team</summary>
+                <ul class="p-2">
+                  <li><a routerLink="nationalteam" class="text-gray-600">National Team</a></li>
+                  <li><a routerLink="delhicontactperson" class="text-gray-600">Delhi Contact Person</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="text-gray-700">Gallery</summary>
+                <ul class="p-2">
+                  <li><a routerLink="photogallery" class="text-gray-600">Photo Gallery</a></li>
+                  <li><a routerLink="videogallery" class="text-gray-600">Video Gallery</a></li>
+                  <li><a routerLink="pressrelease" class="text-gray-600">Press Release</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a routerLink="feedback" class="text-gray-700">Feedback</a></li>
+            <li><a routerLink="contactus" class="text-gray-700">Contact Us</a></li>
+          </ul>
         </div>
-        <ul
-          tabindex="0"
-          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
-        >
-          <li><a routerLink="nationalteam">National Team</a></li>
-          <li><a routerLink="delhicontactperson">Delhi Contact Person</a></li>
-        </ul>
       </div>
-      <div class="dropdown dropdown-hover">
-        <div tabindex="0" role="button" class="btn btn-ghost">Gallery</div>
-        <ul
-          tabindex="0"
-          class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow"
-        >
-          <li><a routerLink="photogallery">Photo Gallery</a></li>
-          <li><a routerLink="videogallery">Video Gallery</a></li>
-          <li><a routerLink="pressrelease">Press Release</a></li>
-        </ul>
+
+      <!-- Desktop menu (hidden on small screens) -->
+      <div class="navbar-center hidden lg:flex">
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base">
+          <a routerLink="/" class="btn btn-ghost" href="#">
+            <i class="fas fa-home text-xl text-white"></i>
+          </a>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn btn-ghost">About Us</div>
+            <ul tabindex="0" class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow">
+              <li><a routerLink="/tokagsp">Tokagsp</a></li>
+              <li><a routerLink="/itandmedia">IT and Media</a></li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn btn-ghost">Programes</div>
+            <ul tabindex="0" class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow">
+              <li>
+                <a routerLink="pravasisammelansecond">2nd Pravasi Jharkhand Sammelan</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn btn-ghost">Management Team</div>
+            <ul tabindex="0" class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow">
+              <li><a routerLink="nationalteam">National Team</a></li>
+              <li><a routerLink="delhicontactperson">Delhi Contact Person</a></li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn btn-ghost">Gallery</div>
+            <ul tabindex="0" class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow">
+              <li><a routerLink="photogallery">Photo Gallery</a></li>
+              <li><a routerLink="videogallery">Video Gallery</a></li>
+              <li><a routerLink="pressrelease">Press Release</a></li>
+            </ul>
+          </div>
+          <a routerLink="feedback" class="btn btn-ghost">Feedback</a>
+          <a routerLink="contactus" class="btn btn-ghost">Contact Us</a>
+        </div>
       </div>
-      <a routerLink="feedback" class="btn btn-ghost">Feedback</a>
-      <a routerLink="contactus" class="btn btn-ghost">Contact Us</a>
     </div>
   </div>
 </div>

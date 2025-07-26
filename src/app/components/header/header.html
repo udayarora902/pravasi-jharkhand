@@ -1,16 +1,16 @@
 <!-- Top Contact Info -->
 <header>
   <div
-    class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2 px-4 py-3 text-sm sm:text-base"
+    class="max-w-7xl mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-2 px-4 py-3 text-xs sm:text-sm lg:text-base"
   >
-    <div class="flex flex-wrap gap-2 font-medium text-gray-800">
-      <a href="#" class="hover:text-blue-600">info@pravasijharkhand.com</a>
-      <span>|</span>
+    <div class="flex flex-col sm:flex-row flex-wrap gap-1 sm:gap-2 font-medium text-gray-800 text-center sm:text-left">
+      <a href="#" class="hover:text-blue-600 break-all">info@pravasijharkhand.com</a>
+      <span class="hidden sm:inline">|</span>
       <a href="#" class="hover:text-blue-600"
         >Contact Now :- 7250961676, 9313962651</a
       >
     </div>
-    <div class="flex gap-3 text-xl">
+    <div class="flex gap-3 text-lg sm:text-xl">
       <a href="#" class="hover:text-red-600"><i class="fab fa-youtube"></i></a>
       <a href="#" class="hover:text-blue-700"
         ><i class="fab fa-facebook"></i
@@ -26,32 +26,34 @@
 <!-- Logo + Buttons -->
 <div>
   <div
-    class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4 px-4 py-4"
+    class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 px-4 py-4"
   >
     <!-- Logo -->
-    <div class="flex items-center">
+    <div class="flex items-center order-1 sm:order-none">
       <a routerLink="/" class="cursor-pointer hover:opacity-80 transition-opacity duration-200">
         <img 
           src="/logo.png" 
           alt="Pravasi Jharkhand Logo" 
-          class="h-16 w-auto object-contain"
+          class="h-12 sm:h-16 w-auto object-contain"
         />
       </a>
     </div>
 
     <!-- Buttons -->
-    <div class="flex flex-col sm:flex-row gap-3">
+    <div class="flex flex-col xs:flex-row gap-2 sm:gap-3 w-full sm:w-auto order-2 sm:order-none">
       <button
-        class="join-now-btn"
+        class="join-now-btn text-sm sm:text-base px-3 sm:px-4 py-2 w-full xs:w-auto"
       >
-        <i class="fas fa-user-plus mr-2"></i>
-        Join Now
+        <i class="fas fa-user-plus mr-1 sm:mr-2"></i>
+        <span class="hidden xs:inline">Join Now</span>
+        <span class="xs:hidden">Join</span>
       </button>
       <button
-        class="live-telecast-btn"
+        class="live-telecast-btn text-sm sm:text-base px-3 sm:px-4 py-2 w-full xs:w-auto"
       >
-        <i class="fas fa-broadcast-tower mr-2"></i>
-        Live Telecast
+        <i class="fas fa-broadcast-tower mr-1 sm:mr-2"></i>
+        <span class="hidden xs:inline">Live Telecast</span>
+        <span class="xs:hidden">Live</span>
       </button>
     </div>
   </div>

@@ -1,10 +1,10 @@
 <!-- Grid Layout: Welcome, Founder in 2 rows + Join Us with rowspan 2 -->
 <div class="max-w-7xl mx-auto px-4">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
     <!-- Welcome Section (Row 1, Col 1-2) -->
-    <div class="lg:col-span-2 p-6 rounded-lg text-white">
-      <h2 class="text-xl font-bold mb-4">WELCOME TO Pravasi Jharkhand</h2>
-      <p class="text-sm leading-relaxed">
+    <div class="lg:col-span-2 p-4 sm:p-6 rounded-lg text-white">
+      <h2 class="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">WELCOME TO Pravasi Jharkhand</h2>
+      <p class="text-sm sm:text-base leading-relaxed">
         Connecting Roots. Celebrating Identity. Welcome to Pravasi Jharkhand, a
         dedicated platform for Jharkhandis living across the globe. Whether you
         are miles away or just a state apart, this is your digital home—
@@ -16,20 +16,20 @@
         community.
       </p>
       <!-- Thin orange divider at bottom of welcome section -->
-      <hr class="border-0 h-px bg-orange-500 mt-4" />
+      <hr class="border-0 h-px bg-orange-500 mt-3 sm:mt-4" />
     </div>
 
     <!-- Enhanced Join Us Section with Facebook Integration - Pure Tailwind CSS -->
     <div
-      class="bg-gradient-to-br from-green-400 via-green-500 to-emerald-600 p-6 rounded-xl shadow-2xl lg:row-span-2 relative overflow-hidden"
+      class="bg-gradient-to-br from-green-400 via-green-500 to-emerald-600 p-4 sm:p-6 rounded-xl shadow-2xl lg:row-span-2 relative overflow-hidden"
     >
       <!-- Background Pattern -->
       <div class="absolute inset-0 opacity-10">
         <div
-          class="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"
+          class="absolute top-0 left-0 w-16 h-16 sm:w-32 sm:h-32 bg-white rounded-full -translate-x-8 -translate-y-8 sm:-translate-x-16 sm:-translate-y-16"
         ></div>
         <div
-          class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-full translate-x-12 translate-y-12"
+          class="absolute bottom-0 right-0 w-12 h-12 sm:w-24 sm:h-24 bg-white rounded-full translate-x-6 translate-y-6 sm:translate-x-12 sm:translate-y-12"
         ></div>
       </div>
 
@@ -37,22 +37,22 @@
         class="relative z-10 h-full flex flex-col items-center justify-center text-center text-white"
       >
         <!-- Header -->
-        <div class="mb-6">
-          <h2 class="text-3xl font-bold mb-2 drop-shadow-lg">
+        <div class="mb-4 sm:mb-6">
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 drop-shadow-lg">
             Join Our Community
           </h2>
-          <p class="text-green-100 text-sm font-medium">
+          <p class="text-green-100 text-xs sm:text-sm font-medium">
             Connect with Dr. Ravindra Kumar Ray
           </p>
         </div>
 
         <!-- Facebook Plugin Container -->
         <div
-          class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 shadow-inner border border-white border-opacity-20"
+          class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-2 sm:p-4 shadow-inner border border-white border-opacity-20 w-full max-w-sm"
         >
-          <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <div class="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg">
             <iframe
-              class="block mx-auto rounded-xl"
+              class="block mx-auto rounded-lg sm:rounded-xl w-full"
               src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frairavindrakumar%2F&amp;tabs=timeline&amp;width=320&amp;height=400&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=276221772528967"
               width="320"
               height="400"
@@ -67,27 +67,27 @@
     </div>
 
     <!-- Founder Section (Row 2, Col 1-2) -->
-    <div class="lg:col-span-2 p-6 rounded-lg text-white">
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
+    <div class="lg:col-span-2 p-4 sm:p-6 rounded-lg text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 items-start">
         <!-- Founder Image -->
-        <div class="lg:col-span-1">
+        <div class="sm:col-span-2 lg:col-span-1 flex flex-col items-center">
           <div class="founder-image-container">
             <img
-              class="founder-image"
+              class="founder-image w-24 h-24 sm:w-32 sm:h-32 lg:w-auto lg:h-auto rounded-full object-cover"
               src="founder.png"
               alt="Dr. Ravindra Kumar Ray"
             />
           </div>
           <div class="text-center mt-2">
-            <h3 class="font-bold text-sm">FOUNDERS</h3>
-            <p class="text-xs opacity-90">Dr. Ravindra Kumar Ray</p>
+            <h3 class="font-bold text-sm sm:text-base">FOUNDERS</h3>
+            <p class="text-xs sm:text-sm opacity-90">Dr. Ravindra Kumar Ray</p>
           </div>
         </div>
 
         <!-- Founder Description -->
-        <div class="lg:col-span-3">
-          <h2 class="text-xl font-bold mb-4">Founder</h2>
-          <p class="text-sm leading-relaxed">
+        <div class="sm:col-span-2 lg:col-span-3">
+          <h2 class="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">Founder</h2>
+          <p class="text-sm sm:text-base leading-relaxed">
             Dr. Ravindra Kumar Ray is a seasoned statesman, visionary thinker,
             and the proud founder of Pravasi Jharkhand. With decades of
             experience in public service and grassroots leadership, he has
